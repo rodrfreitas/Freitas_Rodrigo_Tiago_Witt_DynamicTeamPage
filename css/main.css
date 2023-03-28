@@ -4,6 +4,7 @@
     1.  General Styles
     2.  Main Nav
     3.  Content
+    4.  Footer
  */
 
 
@@ -16,7 +17,8 @@ body {
  /* 2. ---Main Nav--- */
 
 #logo {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     border-right: solid 1px #df551e;
 }
 
@@ -30,7 +32,7 @@ body {
 .menu li {
     display: inline-block;
     margin-right: 60px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .menu li:last-child {
@@ -89,18 +91,19 @@ body {
  /* 3. ---Content--- */
 
 #team-section {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    padding-bottom: 90px;
 }
 
 #team-section h2 {
     font-family: 'Mulish',Arial, Helvetica, sans-serif;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 35px;
     text-align: center;
 }
 
 #member-card {
-    margin-top: 40px;
+    margin-top: 70px;
     background-color: #fff;
     border: solid 1px #df551e;
     border-radius: 15px;
@@ -149,4 +152,22 @@ body {
     background-color:#df551e;
     color: #fff;
     cursor: pointer;
+}
+
+
+ /* 4. ---General Styles--- */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(230, 81, 12);
+    height: 180px;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+
+#footer p {
+    color: #fff;
 }
