@@ -1,0 +1,152 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Content
+ */
+
+
+ /* 1. ---General Styles--- */
+
+body {
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+}
+
+ /* 2. ---Main Nav--- */
+
+#logo {
+    margin-top: 10px;
+    border-right: solid 1px #df551e;
+}
+
+.menu {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.menu li:last-child {
+    margin-left: 0;
+    text-align: center;
+    border-bottom: solid 3px #df551e;
+}
+
+.menu a {
+    font-size: 30px;
+    display: block;
+    /* padding: 10px; */
+    text-decoration: none;
+    color: #333;
+}
+
+.menu a:hover {
+    color: #df551e;
+}
+
+
+
+#section-separator {
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    height: 295px;
+    background-color: grey;
+    background: linear-gradient(rgba(255, 2, 255, 0.616), rgba(247, 116, 9, 0.589)),url(../images/section-frame.jpg);
+    background-position: center;
+    margin-top: 10px;
+}
+
+#section-separator h2 {
+    font-family: 'Mulish',Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 50px;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+#section-separator p {
+    font-family: 'Mulish',Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: 25px;
+    padding-left: 380px;
+    padding-right: 380px;
+}
+
+ /* 3. ---Content--- */
+
+#team-section {
+    background-color: #f1f1f1;
+}
+
+#team-section h2 {
+    font-family: 'Mulish',Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#member-card {
+    margin-top: 40px;
+    background-color: #fff;
+    border: solid 1px #df551e;
+    border-radius: 15px;
+}
+
+#member-card img {
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+}
+
+#member-card h2 {
+    font-size: 22px;
+    color: #df551e;
+}
+
+#member-card p {
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#member-card #blurb {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+#member-card button {
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    padding: 8px 75px 8px 75px;
+    border: solid 2px #df551e;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+#member-card button:hover {
+    background-color:#df551e;
+    color: #fff;
+    cursor: pointer;
+}
