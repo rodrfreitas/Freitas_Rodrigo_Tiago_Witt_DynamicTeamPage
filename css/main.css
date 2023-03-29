@@ -142,11 +142,11 @@ body {
     margin: auto;
     display: block;
     font-size: 18px;
-    padding: 8px 75px 8px 75px;
+    padding: 8px 115px 8px 115px;
     border: solid 2px #df551e;
     background-color: white;
     border-radius: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .member-card button:hover {
@@ -220,14 +220,21 @@ body {
 .lightbox article h3 {
     font-family: 'Mulish',Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #480079;
+    color: #43079B;
     font-size: 42px;
+    margin-top: 60px;
 }
 
 .lightbox article p {
     font-weight: lighter;
     color: #fff;
     font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.lightbox article img {
+    width: 5%;
+    margin-right: 20px;
 }
 
 .lb_text, .lb_heading {
