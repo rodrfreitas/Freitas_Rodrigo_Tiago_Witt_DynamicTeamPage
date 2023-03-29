@@ -5,6 +5,7 @@
     2.  Main Nav
     3.  Content
     4.  Footer
+    5.  Lightbox
  */
 
 
@@ -102,32 +103,32 @@ body {
     text-align: center;
 }
 
-#member-card {
+.member-card {
     margin-top: 70px;
     background-color: #fff;
     border: solid 1px #df551e;
     border-radius: 15px;
 }
 
-#member-card img {
+.member-card img {
     padding-top: 30px;
     margin: auto;
     display: block;
 }
 
-#member-card h2 {
+.member-card h2 {
     font-size: 22px;
     color: #df551e;
 }
 
-#member-card p {
+.member-card p {
     font-weight: bolder;
     font-size: 16px;
     margin-top: 5px;
     text-align: center;
 }
 
-#member-card #blurb {
+.member-card .blurb {
     font-weight: lighter;
     font-size: 16px;
     margin-top: 18px;
@@ -137,7 +138,7 @@ body {
     text-align: center;
 }
 
-#member-card button {
+.member-card button {
     margin: auto;
     display: block;
     font-size: 18px;
@@ -148,14 +149,14 @@ body {
     margin-bottom: 30px;
 }
 
-#member-card button:hover {
+.member-card button:hover {
     background-color:#df551e;
     color: #fff;
     cursor: pointer;
 }
 
 
- /* 4. ---General Styles--- */
+ /* 4. --- Footer --- */
 
 #footer {
     display: flex;
@@ -171,3 +172,73 @@ body {
 #footer p {
     color: #fff;
 }
+
+/* 5. --- Lightbox --- */
+
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(230, 81, 12, 0.95);
+    background-image: url('../images/rod_bg.png');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 80px center;
+
+    z-index: 5000;
+
+    display: none;
+
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: red; }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lightbox article h3 {
+    font-family: 'Mulish',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #480079;
+    font-size: 42px;
+}
+
+.lightbox article p {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 28px;
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+}
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
