@@ -7,7 +7,7 @@ let team_data = {
 
     tiago: {
         name: "Tiago Witt",
-        bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facere voluptates vitae est ea quidem at eligendi ad, modi quos saepe, facilis quaerat. Harum eveniet eum doloribus magni iusto quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facere voluptates vitae est ea quidem at eligendi ad, modi quos saepe, facilis quaerat. Harum eveniet eum doloribus magni iusto quas.",
+        bio: "Hi There, Tiago Here! I am an experienced 3D Modeler, that brings whats is real to a digital world. As an experienced 3D modeler and motion graphics designer, I specialize in taking creative ideas and drawings and transforming them into the digital world. With my passion for the 3D field, I'm able to create immersive experiences that meet the needs and expectations of both clients and consumers. I'm skilled in a variety of programs, including Blender for 3D modeling and game asset preparation, Substance Painter for texturing and effects, and Cinema 4D for motion design and animation. Additionally, I use Adobe After Effects and Premiere, which allows me to prepare and present final video editions.",
         img: "../images/tiago_bg.png"
     },
 
