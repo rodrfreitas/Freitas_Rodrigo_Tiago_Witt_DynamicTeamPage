@@ -37,26 +37,26 @@
 
         <section id="team-section" class="grid-con m-col-span-full">
             <h2 class="m-col-span-full">Team Members</h2>
-            <div id="member-card" class="m-col-span-4">
+            <div class="member-card m-col-span-4">
                 <img src="images/rod.png" alt="Photo of Rodrigo Freitas">
                 <h2>Rodrigo Freitas</h2>
                 <p>UX/UI Designer and Front-end Developer</p>
-                <p id="blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur aliquam nam accusamus aliquid labore placeat fugiat at.</p>
-                <button>More Info</button>
+                <p class="blurb">Hi! I am Rodrigo Freitas, a UX/UI and Front-end Developer with experience in designing solutions and digital products.</p>
+                <button onclick="window.location.href='#lightbox'; document.body.style.overflow='hidden';" data-member="rod">More Info</button>
             </div>
-            <div id="member-card" class="m-col-span-4">
-                <img src="images/no-photo.png" alt="Photo of Rodrigo Freitas">
+            <div class="member-card m-col-span-4">
+                <img src="images/tiago.png" alt="Photo of Tiago Witt">
                 <h2>Tiago Witt</h2>
-                <p>Designer and 3D and motion Modder</p>
-                <p id="blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur aliquam nam accusamus aliquid labore placeat fugiat at.</p>
-                <button>More Info</button>
+                <p>3D Modeler and Motion Graphics Designer</p>
+                <p class="blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur aliquam nam accusamus aliquid labore placeat fugiat at.</p>
+                <button onclick="window.location.href='#lightbox'; document.body.style.overflow='hidden';" data-member="tiago">More Info</button>
             </div>
-            <div id="member-card" class="m-col-span-4">
-                <img src="images/no-photo.png" alt="Photo of Rodrigo Freitas">
+            <div class="member-card m-col-span-4">
+                <img src="images/peter.png" alt="Photo of Peter - Rodrigo's Cat">
                 <h2>Peter the cat</h2>
                 <p>Pet Scrum Master and maker of allergies</p>
-                <p id="blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur aliquam nam accusamus aliquid labore placeat fugiat at.</p>
-                <button>More Info</button>
+                <p class="blurb">Meet Peter, the agile cat who doubles as a Scrum Master and a maker of allergies. Peter is a pro at facilitating agile meetings.</p>
+                <button onclick="window.location.href='#lightbox'; document.body.style.overflow='hidden';" data-member="peter">More Info</button>
             </div>
         </section>
     </main>
@@ -64,6 +64,22 @@
         <div><p>© Orbitz. Orbitz RXT Inc. Headquarters are in London, Ontario, Canada</p></div>
         <div><img src="images/logo.svg" alt="Orbitz Logo"></div>
     </footer>
+
+    <!-- lightbox goes here -->
+    <section class="lightbox" id="lightbox">
+        <h2 class="hidden">lightbox</h2>
+        <!-- close button -->
+        <a href="" class="lightbox_close">x</a>
+
+        <article>
+            <h3 class="lb_heading">Team Member Name</h3>
+
+            <p class="lb_text">
+                Team Member Info
+            </p>
+        </article>
+    </section>
+    <script src="js/team_data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
